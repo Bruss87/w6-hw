@@ -1,0 +1,69 @@
+body {
+  font-family: Lucida Console;
+  background: #9bf3f0 url('images/villains.jpg');
+
+}
+h1 {
+  font-size: 4em;
+  color: yellow;
+  text-align: center;
+}
+#form-wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+#villainName, #realName, #mainPower {
+  width:200px;
+  height:25px;
+}
+
+#characterType {
+  width:100px;
+  height: 25px;
+}
+
+.form-item {
+  margin-right: 1.8rem;
+}
+
+label.primary {
+  display: block;
+  margin: 0.4em 0;
+  font-size: 20px;
+}
+
+label::after {
+  content: ":";
+}
+
+button, input[type="submit"] {
+  margin-top: 1rem;
+  background-color:#08140b;
+  -moz-border-radius:23px;
+  -webkit-border-radius:23px;
+  border-radius:23px;
+  display: inline-block;
+  cursor:pointer;
+  color:#f0e409;
+  font-size:15px;
+  padding:11px 23px;
+  text-decoration:none;
+}
+
+#villains-list {
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+}
+
+.villains-list-item {
+  margin: 0.5rem 0.5rem;
+  padding: 0.5rem 0.8rem;
+  border: 1px solid #20437c;
+  border-radius: 5%;
+  background: #253C78 url('images/batman.jpg');
+  background-position: center;
+  background-size: cover;
+  color: yellow;
+}

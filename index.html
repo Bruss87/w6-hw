@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <title>Batman villains</title>
+  <script src="js/app.js"></script>
+  <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
+  </head>
+  <body>
+    <h1>Batman Villains</h1>
+    <form id="new-item-form">
+      <div id="form-wrapper">
+        <div class="form-item">
+          <label for="villainName" class="primary">Villan Name</label>
+          <input type="text" id="villainName" required/>
+          </div>
+
+        <div class="form-item">
+            <label for="realName" class="primary">Real Name</label>
+            <input type="text" id="realName" required/>
+        </div>
+
+        <div class="form-item">
+          <label for="mainPower" class="primary">Main Power</label>
+          <input type="text" id="mainPower" required/>
+          </div>
+
+        <div class="form-item">
+          <label for="characterType" class="primary">Character Type</label>
+          <select id="characterType">
+            <option value="" disabled selected></option>
+            <option value="Human">Human</option>
+            <option value="Mutant">Mutant</option>
+            <option value="Other">Other</option>
+          </select>
+        </div>
+      </div>
+      <input type="submit" value="Save"/>
+    </form>
+
+    <button id="delete-all">Delete All</button>
+
+    <div id="villains-list"></div>
+    </body>
+</html>
